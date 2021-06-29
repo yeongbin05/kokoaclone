@@ -17,4 +17,9 @@
 
 .icon-row__icon span {
   margin-top: 15px;
+  font-weight: 500;
+}
+.icon-row img {
+  height: 80px;
+  width: 80px;
 }

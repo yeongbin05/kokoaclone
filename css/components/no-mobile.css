@@ -1,10 +1,11 @@
 #no-mobile {
   position: absolute;
   z-index: 99;
-  height: 100vh;
+  height: 115vh;
   width: 100vw;
-  background-color: var(--yellow);
+  background-color: black;
   display: flex;
+  flex-direction: column;
   top: 0;
   justify-content: center;
   align-items: center;
@@ -15,4 +16,9 @@
   #no-mobile {
     display: none;
   }
+}
+
+#no-mobile span {
+  color: white;
+  margin-bottom: 350px;
 }

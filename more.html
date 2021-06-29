@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More-KaKaoTalk</title>
   </head>
-  <body>
+  <body class="background">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -27,7 +27,7 @@
       <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
+        <a href="https://music.youtube.com/" target="_blank"><span><i class="fas fa-music fa-lg"></i></span></a>
         <span
           ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
         ></span>
@@ -48,19 +48,36 @@
         </div>
         <div class="user-component__column"></div>
       </div>
-      <div class="icon-row">
+
+      <div class="more-suggestions">
+        <span class="more-suggestions__title">LINKS</span>
+      </div>
+
+      <div class="icon-row">        
         <div class="icon-row__icon">
-          <i class="fas fa-qrcode"></i>
-          <span>QR Code</span>
+          <a href="https://finance.yahoo.com/" target="_blank">
+          <img
+            src="https://iptor.com/wp-content/uploads/2020/02/Yahoo-finance-logo.png" 
+          /></a>
+          <span>YAHOO...</span>
         </div>
         <div class="icon-row__icon">
-          <i class="fas fa-address-book"></i><span>Add by Contacts </span>
+          <a href="https://www.marketwatch.com/" target="_blank">                    
+          <img
+            src="data:image/png;base64,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"
+          /></a><span>MARKET... </span>
         </div>
         <div class="icon-row__icon">
-          <i class="fas fa-fingerprint"></i><span>Add by ID</span>
+          <a href="https://seekingalpha.com/" target="_blank">
+          <img
+            src="data:image/png;base64,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"
+          /></a><span>SEEKING...</span>
         </div>
         <div class="icon-row__icon">
-          <i class="fas fa-envelope"></i><span>Invite</span>
+          <a href="https://www.binance.com/en" target="_blank">
+          <img
+            src="https://logodownload.org/wp-content/uploads/2021/03/binance-logo-1.png"
+          /></i></a><span>BINANC...</span>
         </div>
       </div>
       <div class="more-suggestions">
@@ -127,7 +144,10 @@
       </ul>
     </nav>
     <div id="no-mobile">
-      <span>Your screen is too big</span>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZ0S5V3kesGBklVwIcJ7IMRNOmQY8BmK-E0hfY4CwEbweGYznXRgHFD1sT4fuBuuRa70&usqp=CAU"
+      />
+      <span>Your screen is too big buddy</span>
     </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

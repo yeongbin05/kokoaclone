@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to KaKaoTalk</title>
   </head>
-  <body>
+  <body class="background">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -31,13 +31,21 @@
     </header>
 
     <form action="friends.html" memthod="get" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="password" />
+      <input
+        name="username"
+        type="text"
+        placeholder="Email or phone number"
+        required
+      />
+      <input name="password" type="password" placeholder="password" required />
       <input type="submit" value="Log in" />
       <a href="#">Find KaKao account or password </a>
     </form>
     <div id="no-mobile">
-      <span>Your screen is too big</span>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZ0S5V3kesGBklVwIcJ7IMRNOmQY8BmK-E0hfY4CwEbweGYznXRgHFD1sT4fuBuuRa70&usqp=CAU"
+      />
+      <span>Your screen is too big buddy</span>
     </div>
 
     <script
